@@ -1,4 +1,4 @@
-# React Native Animated Progress Bar
+# React Native Animated Progress
 
 Need a lightweight and easy-to-use Progress Bar? Here it is!
 
@@ -27,7 +27,7 @@ yarn add react-native-animated-progress-bar
 ```js
 import React from "react";
 import { View, Text } from "react-native";
-import ProgressBar from "react-native-animated-progressbar";
+import ProgressBar from "react-native-animated-progress";
 
 const App = () => {
   return (
