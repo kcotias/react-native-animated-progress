@@ -10,6 +10,8 @@ A cross-platform Progress Bar component which supports gestures.
 
 ## Features
 
+- Good fit for loading situations
+- Good fit for progress display
 - Smooth animations
 - Highly customizable
 - Very lightweight
@@ -19,7 +21,7 @@ A cross-platform Progress Bar component which supports gestures.
 Open a Terminal in the project root and run:
 
 ```sh
-yarn add react-native-animated-progress
+npm install react-native-animated-progress
 ```
 
 ## Quick Start
