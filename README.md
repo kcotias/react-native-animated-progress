@@ -19,7 +19,7 @@ A cross-platform Progress Bar component which supports gestures.
 Open a Terminal in the project root and run:
 
 ```sh
-yarn add react-native-animated-progress-bar
+yarn add react-native-animated-progress
 ```
 
 ## Quick Start
