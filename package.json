@@ -1,0 +1,37 @@
+{
+  "name": "react-native-animated-progressbar",
+  "version": "1.0.0",
+  "description": "Need an animated and customizable ProgressBar? Here it ts!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcotias/react-native-animated-progress-bar.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "native",
+    "progress",
+    "slider",
+    "bar",
+    "progressBar",
+    "loading",
+    "animated",
+    "ios",
+    "android",
+    "mobile",
+    "component"
+  ],
+  "author": "Kaian Cotias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kcotias/react-native-animated-progress-bar/issues"
+  },
+  "homepage": "https://github.com/kcotias/react-native-animated-progress-bar#readme",
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.58.0"
+  }
+}
