@@ -2,7 +2,7 @@
 
 Need a lightweight and easy-to-use Progress Bar? Here it is!
 
-A cross-platform Progress Bar component which supports gestures.
+A cross-platform Progress Bar component with different customize options.
 
 ![](example.gif)
 
