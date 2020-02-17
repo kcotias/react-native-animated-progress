@@ -6,7 +6,7 @@ A cross-platform Progress Bar component with different customize options.
 
 ![](example.gif)
 
-- Checkout the [example/](https://github.com/kcotias/react-native-animated-progress-bar/tree/master/examples) folder for use example.
+- Checkout the [example/](https://github.com/kcotias/react-native-animated-progress/tree/master/examples) folder for use example.
 
 ## Features
 
