@@ -11,7 +11,7 @@ const ProgressBar = (props) => {
     indeterminateDuration,
     onCompletion,
     backgroundColor,
-    trackColor
+    trackColor = "#A6A6A6"
   } = props;
 
   const [timer] = useState(new Animated.Value(0));

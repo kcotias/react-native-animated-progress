@@ -89,6 +89,6 @@ Sets the bar to animate constantly as a loading progress.
 
 Chooses the point where the progress should animate to, based on the progress bar width.
 
-##### `trackColor` - string (`Default - none`)
+##### `trackColor` - string (`Default - #A6A6A6`)
 
 Sets the color of the progress bar track.
