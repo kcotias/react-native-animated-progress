@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { Animated, StyleSheet, View } from "react-native";
 
-const ProgressBar = props => {
+const ProgressBar = (props) => {
   const {
     height,
     progress,
@@ -10,7 +10,8 @@ const ProgressBar = props => {
     progressDuration,
     indeterminateDuration,
     onCompletion,
-    backgroundColor
+    backgroundColor,
+    trackColor = "#A6A6A6"
   } = props;
 
   const [timer] = useState(new Animated.Value(0));
@@ -106,7 +107,9 @@ const ProgressBar = props => {
 
   return (
     <View>
-      <Animated.View style={[styles.container, { backgroundColor: "#A6A6A6" }]}>
+      <Animated.View
+        style={[styles.container, { backgroundColor: trackColor }]}
+      >
         <Animated.View
           style={[
             styles.progressBar,
