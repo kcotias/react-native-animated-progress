@@ -39,7 +39,8 @@ const ProgressBar = (props) => {
     } else {
       Animated.timing(width, {
         duration: animated ? progressDuration : 0,
-        toValue: progress
+        toValue: progress,
+        useNativeDriver: false,
       }).start(() => {
         onCompletion();
       });
