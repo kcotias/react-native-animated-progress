@@ -39,7 +39,8 @@ const ProgressBar = (props) => {
     } else {
       Animated.timing(width, {
         duration: animated ? progressDuration : 0,
-        toValue: progress
+        toValue: progress,
+        useNativeDriver: false
       }).start(() => {
         onCompletion();
       });
@@ -69,27 +70,27 @@ const ProgressBar = (props) => {
   const styleAnimation = () => {
     return indeterminate
       ? {
-          transform: [
-            {
-              translateX: timer.interpolate({
-                inputRange: [0, 0.5, 1],
-                outputRange: [-0.6 * 320, -0.5 * 0.8 * 320, 0.7 * 320]
-              })
-            },
-            {
-              scaleX: timer.interpolate({
-                inputRange: [0, 0.5, 1],
-                outputRange: [0.0001, 0.8, 0.0001]
-              })
-            }
-          ]
-        }
+        transform: [
+          {
+            translateX: timer.interpolate({
+              inputRange: [0, 0.5, 1],
+              outputRange: [-0.6 * 320, -0.5 * 0.8 * 320, 0.7 * 320]
+            })
+          },
+          {
+            scaleX: timer.interpolate({
+              inputRange: [0, 0.5, 1],
+              outputRange: [0.0001, 0.8, 0.0001]
+            })
+          }
+        ]
+      }
       : {
-          width: width.interpolate({
-            inputRange: [0, 100],
-            outputRange: ["0%", "100%"]
-          })
-        };
+        width: width.interpolate({
+          inputRange: [0, 100],
+          outputRange: ["0%", "100%"]
+        })
+      };
   };
 
   const styles = StyleSheet.create({
@@ -132,7 +133,7 @@ ProgressBar.defaultProps = {
   indeterminate: false,
   indeterminateDuration: 1100,
   progressDuration: 1100,
-  onCompletion: () => {}
+  onCompletion: () => { }
 };
 
 export default ProgressBar;
