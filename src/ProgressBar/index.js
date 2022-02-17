@@ -11,7 +11,8 @@ const ProgressBar = (props) => {
     indeterminateDuration,
     onCompletion,
     backgroundColor,
-    trackColor = "#A6A6A6"
+    trackColor = "#A6A6A6",
+    borderRadius = 4,
   } = props;
 
   const [timer] = useState(new Animated.Value(0));
@@ -98,7 +99,6 @@ const ProgressBar = (props) => {
       width: "100%",
       height,
       overflow: "hidden",
-      borderRadius: 4
     },
     progressBar: {
       flex: 1,
@@ -109,7 +109,7 @@ const ProgressBar = (props) => {
   return (
     <View>
       <Animated.View
-        style={[styles.container, { backgroundColor: trackColor }]}
+        style={[styles.container, { backgroundColor: trackColor, borderRadius }]}
       >
         <Animated.View
           style={[
