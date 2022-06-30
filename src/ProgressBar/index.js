@@ -11,7 +11,8 @@ const ProgressBar = (props) => {
     indeterminateDuration,
     onCompletion,
     backgroundColor,
-    trackColor = "#A6A6A6"
+    trackColor = "#A6A6A6",
+    value
   } = props;
 
   const [timer] = useState(new Animated.Value(0));
@@ -87,7 +88,7 @@ const ProgressBar = (props) => {
         }
       : {
           width: width.interpolate({
-            inputRange: [0, 100],
+            inputRange: [0, value],
             outputRange: ["0%", "100%"]
           })
         };
@@ -133,6 +134,7 @@ ProgressBar.defaultProps = {
   indeterminate: false,
   indeterminateDuration: 1100,
   progressDuration: 1100,
+  value : 100,
   onCompletion: () => {}
 };
 
