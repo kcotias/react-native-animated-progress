@@ -11,7 +11,8 @@ const ProgressBar = (props) => {
     indeterminateDuration,
     onCompletion,
     backgroundColor,
-    trackColor = "#A6A6A6"
+    trackColor = "#A6A6A6",
+    borderRadius
   } = props;
 
   const [timer] = useState(new Animated.Value(0));
@@ -98,11 +99,11 @@ const ProgressBar = (props) => {
       width: "100%",
       height,
       overflow: "hidden",
-      borderRadius: 4
+      borderRadius: borderRadius || 4
     },
     progressBar: {
       flex: 1,
-      borderRadius: height / 2
+      borderRadius: borderRadius || (height / 2)
     }
   });
 
@@ -133,7 +134,8 @@ ProgressBar.defaultProps = {
   indeterminate: false,
   indeterminateDuration: 1100,
   progressDuration: 1100,
-  onCompletion: () => {}
+  onCompletion: () => {},
+  borderRadius: null
 };
 
 export default ProgressBar;
